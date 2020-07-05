@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "payment",
+        "1": "ecommerce"
+    },
+    "demo_page": "https://i2b.co/bubble-transferwise-plugin",
+    "description": "Take your transfers with you. Keep track of your transfers on the go with the TransferWise app. Make new transfers - wherever you are - at the touch of a button.\n",
+    "image": "//s3.amazonaws.com/appforest_uf/f1556337732487x208490645137081150/fb-og-logo-flag.png",
+    "instructions": "",
+    "license": "open_source",
+    "link": "https://transferwise.com/u/mohameda1427",
+    "name": "Transfer Wise",
+    "plugin_instructions": "1- Sign up\n2- Go to settings\n3- API tokens\n4- Add new token\n5- Add token to the plugin like\nBearer xxxxxxxx xxxx xxxx xxxx xxxxxxxxxxxx\n"
+}

@@ -1,0 +1,139 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAD": {
+            "doc_link": "https://api-docs.transferwise.com/#payouts-guide-get-your-profile-id",
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Get profile id",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1556337623911x926263080474116100.plugin_api.AAD",
+            "types": "{\"plugin_api.AAD\":{\"caption\":\"Get profile id\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"path\":[\"type\"]},\"_p_details.firstName\":{\"ret_value\":\"text\",\"caption\":\"details firstName\",\"path\":[\"details\",\"firstName\"]},\"_p_details.lastName\":{\"ret_value\":\"text\",\"caption\":\"details lastName\",\"path\":[\"details\",\"lastName\"]},\"_p_details.dateOfBirth\":{\"ret_value\":\"text\",\"caption\":\"details dateOfBirth\",\"path\":[\"details\",\"dateOfBirth\"]},\"_p_details.phoneNumber\":{\"ret_value\":\"text\",\"caption\":\"details phoneNumber\",\"path\":[\"details\",\"phoneNumber\"]},\"_p_details.avatar\":{\"ret_value\":\"text\",\"caption\":\"details avatar\",\"path\":[\"details\",\"avatar\"]},\"_p_details.occupation\":{\"ret_value\":\"text\",\"caption\":\"details occupation\",\"path\":[\"details\",\"occupation\"]},\"_p_details.primaryAddress\":{\"ret_value\":\"number\",\"caption\":\"details primaryAddress\",\"path\":[\"details\",\"primaryAddress\"]},\"_p_details.name\":{\"ret_value\":\"text\",\"caption\":\"details name\",\"path\":[\"details\",\"name\"]},\"_p_details.registrationNumber\":{\"ret_value\":\"text\",\"caption\":\"details registrationNumber\",\"path\":[\"details\",\"registrationNumber\"]},\"_p_details.acn\":{\"ret_value\":\"text\",\"caption\":\"details acn\",\"path\":[\"details\",\"acn\"]},\"_p_details.abn\":{\"ret_value\":\"text\",\"caption\":\"details abn\",\"path\":[\"details\",\"abn\"]},\"_p_details.arbn\":{\"ret_value\":\"text\",\"caption\":\"details arbn\",\"path\":[\"details\",\"arbn\"]},\"_p_details.companyType\":{\"ret_value\":\"text\",\"caption\":\"details companyType\",\"path\":[\"details\",\"companyType\"]},\"_p_details.companyRole\":{\"ret_value\":\"text\",\"caption\":\"details companyRole\",\"path\":[\"details\",\"companyRole\"]},\"_p_details.descriptionOfBusiness\":{\"ret_value\":\"text\",\"caption\":\"details descriptionOfBusiness\",\"path\":[\"details\",\"descriptionOfBusiness\"]},\"_p_details.webpage\":{\"ret_value\":\"text\",\"caption\":\"details webpage\",\"path\":[\"details\",\"webpage\"]}}}}",
+            "url": "https://api.transferwise.com/v1/profiles"
+        },
+        "AAH": {
+            "doc_link": "https://api-docs.transferwise.com/#payouts-guide-create-quote",
+            "initialized": true,
+            "method": "post",
+            "name": "Create quote",
+            "params": {
+                "AAI": {
+                    "doc": "Personal or business profile id\t",
+                    "key": "profile",
+                    "private": true,
+                    "value": "8623463",
+                    "visibility": "public"
+                },
+                "AAJ": {
+                    "doc": "Source(send) currency code\t",
+                    "key": "source",
+                    "private": true,
+                    "value": "USD"
+                },
+                "AAK": {
+                    "doc": "Target(receive) currency code\t",
+                    "key": "target",
+                    "private": true,
+                    "value": "GBP"
+                },
+                "AAL": {
+                    "doc": "Always use constant 'FIXED'\t",
+                    "key": "rateType",
+                    "private": true,
+                    "value": "FIXED",
+                    "visibility": "hidden"
+                },
+                "AAM": {
+                    "doc": "Amount in target currency",
+                    "key": "targetAmount",
+                    "private": true,
+                    "value": "400"
+                },
+                "AAN": {
+                    "doc": "'BALANCE_PAYOUT' for payments \n'BALANCE_CONVERSION' for conversion between balances",
+                    "key": "type",
+                    "private": true,
+                    "value": "BALANCE_PAYOUT",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1556337623911x926263080474116100.plugin_api.AAH",
+            "types": "{\"plugin_api.AAH\":{\"caption\":\"Create quote\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"path\":[\"source\"]},\"_p_target\":{\"ret_value\":\"text\",\"caption\":\"target\",\"path\":[\"target\"]},\"_p_sourceAmount\":{\"ret_value\":\"number\",\"caption\":\"sourceAmount\",\"path\":[\"sourceAmount\"]},\"_p_targetAmount\":{\"ret_value\":\"number\",\"caption\":\"targetAmount\",\"path\":[\"targetAmount\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"path\":[\"type\"]},\"_p_rate\":{\"ret_value\":\"number\",\"caption\":\"rate\",\"path\":[\"rate\"]},\"_p_createdTime\":{\"ret_value\":\"date\",\"caption\":\"createdTime\",\"path\":[\"createdTime\"]},\"_p_createdByUserId\":{\"ret_value\":\"number\",\"caption\":\"createdByUserId\",\"path\":[\"createdByUserId\"]},\"_p_profile\":{\"ret_value\":\"number\",\"caption\":\"profile\",\"path\":[\"profile\"]},\"_p_rateType\":{\"ret_value\":\"text\",\"caption\":\"rateType\",\"path\":[\"rateType\"]},\"_p_deliveryEstimate\":{\"ret_value\":\"date\",\"caption\":\"deliveryEstimate\",\"path\":[\"deliveryEstimate\"]},\"_p_fee\":{\"ret_value\":\"number\",\"caption\":\"fee\",\"path\":[\"fee\"]},\"_p_allowedProfileTypes\":{\"ret_value\":\"list.text\",\"caption\":\"allowedProfileTypes\",\"path\":[\"allowedProfileTypes\"]},\"_p_guaranteedTargetAmount\":{\"ret_value\":\"boolean\",\"caption\":\"guaranteedTargetAmount\",\"path\":[\"guaranteedTargetAmount\"]},\"_p_ofSourceAmount\":{\"ret_value\":\"boolean\",\"caption\":\"ofSourceAmount\",\"path\":[\"ofSourceAmount\"]}}}}",
+            "url": "https://api.transferwise.com/v1/quotes "
+        },
+        "AAQ": {
+            "doc_link": "https://api-docs.transferwise.com/#payouts-guide-track-transfer-status",
+            "initialized": true,
+            "method": "get",
+            "name": "Track transfer status",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1556337623911x926263080474116100.plugin_api.AAQ",
+            "types": "{\"plugin_api.AAQ\":{\"caption\":\"Track transfer statu\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_user\":{\"ret_value\":\"number\",\"caption\":\"user\",\"path\":[\"user\"]},\"_p_targetAccount\":{\"ret_value\":\"number\",\"caption\":\"targetAccount\",\"path\":[\"targetAccount\"]},\"_p_sourceAccount\":{\"ret_value\":\"text\",\"caption\":\"sourceAccount\",\"path\":[\"sourceAccount\"]},\"_p_quote\":{\"ret_value\":\"text\",\"caption\":\"quote\",\"path\":[\"quote\"]},\"_p_quoteUuid\":{\"ret_value\":\"text\",\"caption\":\"quoteUuid\",\"path\":[\"quoteUuid\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"path\":[\"status\"]},\"_p_reference\":{\"ret_value\":\"text\",\"caption\":\"reference\",\"path\":[\"reference\"]},\"_p_rate\":{\"ret_value\":\"number\",\"caption\":\"rate\",\"path\":[\"rate\"]},\"_p_created\":{\"ret_value\":\"date\",\"caption\":\"created\",\"path\":[\"created\"]},\"_p_business\":{\"ret_value\":\"number\",\"caption\":\"business\",\"path\":[\"business\"]},\"_p_transferRequest\":{\"ret_value\":\"text\",\"caption\":\"transferRequest\",\"path\":[\"transferRequest\"]},\"_p_details.reference\":{\"ret_value\":\"text\",\"caption\":\"details reference\",\"path\":[\"details\",\"reference\"]},\"_p_hasActiveIssues\":{\"ret_value\":\"boolean\",\"caption\":\"hasActiveIssues\",\"path\":[\"hasActiveIssues\"]},\"_p_sourceCurrency\":{\"ret_value\":\"text\",\"caption\":\"sourceCurrency\",\"path\":[\"sourceCurrency\"]},\"_p_sourceValue\":{\"ret_value\":\"number\",\"caption\":\"sourceValue\",\"path\":[\"sourceValue\"]},\"_p_targetCurrency\":{\"ret_value\":\"text\",\"caption\":\"targetCurrency\",\"path\":[\"targetCurrency\"]},\"_p_targetValue\":{\"ret_value\":\"number\",\"caption\":\"targetValue\",\"path\":[\"targetValue\"]},\"_p_customerTransactionId\":{\"ret_value\":\"text\",\"caption\":\"customerTransactionId\",\"path\":[\"customerTransactionId\"]}}}}",
+            "url": "https://api.transferwise.com/v1/transfers/[transferId]",
+            "url_params": {
+                "AAR": {
+                    "key": "transferId",
+                    "private": true,
+                    "value": "71244655"
+                }
+            }
+        },
+        "AAS": {
+            "doc_link": "https://api-docs.transferwise.com/#payouts-guide-get-transfer-delivery-time",
+            "initialized": true,
+            "method": "get",
+            "name": "Get transfer delivery time",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1556337623911x926263080474116100.plugin_api.AAS",
+            "types": "{\"plugin_api.AAS\":{\"caption\":\"Get transfer delivery time\",\"fields\":{\"_p_estimatedDeliveryDate\":{\"ret_value\":\"date\",\"caption\":\"estimatedDeliveryDate\",\"path\":[\"estimatedDeliveryDate\"]}}}}",
+            "url": "https://api.transferwise.com/v1/delivery-estimates/[transferId]",
+            "url_params": {
+                "AAT": {
+                    "key": "transferId",
+                    "private": true,
+                    "value": "71244655"
+                }
+            }
+        },
+        "AAU": {
+            "doc_link": "https://api-docs.transferwise.com/#exchange-rates",
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Exchange Rates",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1556337623911x926263080474116100.plugin_api.AAU",
+            "types": "{\"plugin_api.AAU\":{\"caption\":\"Exchange Rate\",\"fields\":{\"_p_rate\":{\"ret_value\":\"number\",\"caption\":\"rate\",\"path\":[\"rate\"]},\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"path\":[\"source\"]},\"_p_target\":{\"ret_value\":\"text\",\"caption\":\"target\",\"path\":[\"target\"]},\"_p_time\":{\"ret_value\":\"date\",\"caption\":\"time\",\"path\":[\"time\"]}}}}",
+            "url": "https://api.transferwise.com/v1/rates?source=[source currency code]&target=[target currency code]",
+            "url_params": {
+                "AAv": {
+                    "key": "source currency code",
+                    "private": true,
+                    "value": "GBP"
+                },
+                "ABD": {
+                    "key": "target currency code",
+                    "private": true,
+                    "value": "USD"
+                }
+            }
+        }
+    },
+    "human": "Transfer Wise",
+    "shared_headers": {
+        "AAG": {
+            "doc": "Bearer xxxxxxxx xxxx xxxx xxxx xxxxxxxxxxxx",
+            "key": "Authorization",
+            "private": true,
+            "visibility": "secret"
+        }
+    },
+    "token_param_name": "Authorization"
+}
